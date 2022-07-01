@@ -27,11 +27,13 @@
                       Our Menu
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Beverages</a></li>
-                      <li><a class="dropdown-item" href="#">Deserts & Shakes</a></li>
-                      <li><a class="dropdown-item" href="#">Combo Meals</a></li>
-                      <li><a class="dropdown-item" href="#">Snacks & Slides</a></li>
-                      <li><a class="dropdown-item" href="#">Chicken & Sandwiches</a></li>
+                      <li><img class="dropdown-item" href="#"><img src="./img/beverages.jpg"></img> Beverages</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="./img/desserts_shakes_300x300_menu-category-desktop.jpg"></img> Deserts & Shakes</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="./img/combo meal.jpg"></img> Combo Meals</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="./img/snacks_sides_300x300_menu-category-desktop.jpg"></img> Snacks & Slides</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="./img/chicken_sandwiches_300x300_menu-category-desktop.jpg"></img> Chicken & Sandwiches</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="./img/breakfast_300x300_menu-category-desktop.jpg"></img> Breakfast</a></li>
+
                      </ul>
                   </li>
               <li class="nav-item">
@@ -53,7 +55,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Locate</a>
               </li>
-              <button type="button" class="btn btn-warning">Order Now</button>
+              <button onclick="display()" type="button" class="btn btn-warning">Order Now</button>
 
               
             </ul>
@@ -74,7 +76,7 @@
                 <p class="para-1">Get a free 10 piece Chicken McNuggets when you download the McDonald’s app and join MyMcDonald’s Rewards. Then, get free McDonald’s faves with <a href="#">1500 bonus points</a> after your first purchase.</p>
                 <p class="para-2">*Offer valid 1x thru the last day of the month for first time app users at participating McDonald's. May take up to 48 hours to appear in your deals. Free Loyalty Reward Points valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald’s. Excludes delivery. McD app download and registration required.</p>
 
-                <button type="button" class="btn btn-warning">Download the App</button>
+                <button onclick="download()" type="button" class="btn btn-warning">Download the App</button>
 
             </div>
 
@@ -303,11 +305,22 @@
           <div class="text-center p-3" style="background-color:#fff">
             © 2017 - 2022 McDonald's. All Rights Reserved
           </div>
-          <!-- Copyright -->
+          
         </footer>
       
       </div>
-      <!-- End of .container -->
+      
+
+      <script>
+        function display(){
+          alert("www.mcdonalds.com wants to know your location")
+        }
+        function download(){
+          alert("Your current security settings do not allow this file to be downloaded")
+        }
+        
+
+      </script>
 
 
 
