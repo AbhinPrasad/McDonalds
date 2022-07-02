@@ -29,3 +29,14 @@
 .download{
     margin-left: 400px;
 }
+.footer-text{
+    list-style: none;
+}
+
+.logo-footer{
+    height: 30px;
+}
+.copyright-text{
+    text-decoration: none;
+    color: black;
+}

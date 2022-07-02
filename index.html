@@ -14,7 +14,7 @@
 
     <!--navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
         <div class="container">
             <img class="nav-icon" src="./img/arches-logo_108x108.jpg"></img>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Locate</a>
               </li>
-              <button onclick="display()" type="button" class="btn btn-warning">Order Now</button>
+              <button id="orderButton" type="button" class="btn btn-warning">Order Now</button>
 
               
             </ul>
@@ -302,10 +302,40 @@
           <hr>
           
             
-          <div class="text-center p-3" style="background-color:#fff">
-            © 2017 - 2022 McDonald's. All Rights Reserved
-          </div>
+          <!-- <div class="text-center p-3" style="background-color:#fff"> -->
+            <!-- © 2017 - 2022 McDonald's. All Rights Reserved -->
+          <!-- </div> -->
           
+          <div class="row">
+            <div class="col-md-9 col-xs-12">
+              <ul class="copyright">
+                <div class="row">
+                  <div class="col-md-3 col-sm-4">
+                    <li class="footer-text mb-2">Privacy (Updated)</li>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <li class="footer-text mb-2">California Privacy Notice</li>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <li class="footer-text mb-2">Terms & Conditions</li>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <li class="footer-text mb-2">Digital Accessibility</li>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <li class="footer-text mb-2">Do Not Sell My Personal Information</li>
+                  </div>
+                  <div class="col-md-3 col-sm-4">
+                    <li class="footer-text mb-2">Cookie Settings</li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <img class="logo-footer" src="img/arches-logo_108x108 (1).jpg" alt="logo">
+              <a class="copyright-text" href="#">© 2017 - 2022 McDonald's. All Rights Reserved</a>
+            </div>
+          </div>
         </footer>
       
       </div>
@@ -318,6 +348,9 @@
         function download(){
           alert("Your current security settings do not allow this file to be downloaded")
         }
+
+        const orderButton=document.querySelector("#orderButton");
+        orderButton.addEventListener("click",display)
         
 
       </script>
